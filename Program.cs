@@ -52,12 +52,12 @@ namespace PrimaryScreenTransmitterOverHTTP
             }
             foreach (string prefix in httplistener.Prefixes)
             {
-                Program.msg += Environment.NewLine + $"Add HTTP Server prefix: {prefix}";
+                Program.msg += Environment.NewLine + $"Add PrimaryScreenTransmitterHTTP Server prefix: {prefix}";
             }
             try
             {
                 httplistener.Start();
-                Program.msg += Environment.NewLine + $"HTTP server started on port {port}";
+                Program.msg += Environment.NewLine + $"PrimaryScreenTransmitterHTTP server started on port {port}";
                 using (System.Diagnostics.EventLog eventLog = new System.Diagnostics.EventLog("Application"))
                 {
                     eventLog.Source = ServiceName;
@@ -69,7 +69,7 @@ namespace PrimaryScreenTransmitterOverHTTP
                 using (System.Diagnostics.EventLog eventLog = new System.Diagnostics.EventLog("Application"))
                 {
                     eventLog.Source = ServiceName;
-                    eventLog.WriteEntry($"Stopping HTTP server with Exception - {ex.Message}.", System.Diagnostics.EventLogEntryType.Warning);
+                    eventLog.WriteEntry($"Stopping PrimaryScreenTransmitterHTTP server with Exception - {ex.Message}.", System.Diagnostics.EventLogEntryType.Warning);
                 }
                 Program.isRuning = false;
                 return;
@@ -88,7 +88,7 @@ namespace PrimaryScreenTransmitterOverHTTP
                     using (System.Diagnostics.EventLog eventLog = new System.Diagnostics.EventLog("Application"))
                     {
                         eventLog.Source = ServiceName;
-                        eventLog.WriteEntry($"Stopping HTTP server with Exception - {ex.Message}.", System.Diagnostics.EventLogEntryType.Warning);
+                        eventLog.WriteEntry($"Stopping PrimaryScreenTransmitterHTTP server with Exception - {ex.Message}.", System.Diagnostics.EventLogEntryType.Warning);
                     }
                     Program.isRuning = false;
                     return;

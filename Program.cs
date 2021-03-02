@@ -15,7 +15,7 @@ namespace PrimaryScreenTransmitterOverHTTP
     {
         private static readonly string ServiceName = "PrimaryScreenTransmitterOverHTTP";
         private static readonly string title = "Primary screen transmitter over HTTP";
-        private static readonly string copyright = "Copyright © 2021 Dmitry Tsyganov(tsyganovd@gmail.com) The MIT License(MIT).";
+        private static readonly string copyright = "Copyright © 2021 Dmitry Tsyganov(tsyganovd-npo@yandex.ru) The MIT License(MIT).";
         private static Int16 port = 5800;
         private static Int16 refresh = 10;
         private static string msg;

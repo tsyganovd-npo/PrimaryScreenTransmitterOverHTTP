@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
 [assembly: AssemblyTitle("Primary Screen Transmitter Over HTTP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The application allows viewing the device primary screen in web browser.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PrimaryScreenTransmitterOverHTTP")]
-[assembly: AssemblyCopyright("Copyright © 2021 Dmitry Tsyganov (tsyganovd@gmail.com)")]
+[assembly: AssemblyCopyright("Copyright © 2021 Dmitry Tsyganov (https://github.com/tsyganovd-npo/PrimaryScreenTransmitterOverHTTP) The MIT License.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
